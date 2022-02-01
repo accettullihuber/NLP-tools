@@ -1,0 +1,11 @@
+np.sum(W*W) # sum{i,j} M_ij M_ij
+np.sum(W*W.T) # sum{i,j} M_ij M_ji
+np.sum(np.diagonal(W)*W.T) # \sum_{i,j} W_{ii} W_{ij}
+np.sum(np.diagonal(W)*W) # \sum_{i,j} W_{ii} W_{ji}
+np.sum(np.dot(W.T,W)) # sum{i,j,k} W_ij W_ik
+np.sum(np.dot(W,W.T)) # sum{i,j,k} W_ij W_kj
+np.sum(np.dot(W,W)) # sum{i,j,k} W_ij W_jk
+np.sum(W) ** 2 #sum{i,j,k,l} W_ij W_kl
+np.trace(W*W) # sum{i} W^2_ii
+np.trace(W) ** 2  # \sum_{i,j,k} W_{ii} W_{jj}
+np.sum(W) * np.trace(W)  # \sum_{i,j,k} W_{ii} W_{jk}

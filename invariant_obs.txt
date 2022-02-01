@@ -1,0 +1,19 @@
+np.trace(W) # \sum_{i} W_{ii}
+np.trace(np.dot(W,W)) # sum{i} W^2_ii
+np.trace(np.dot(W,W.T)) # sum{i} (W*W.T)_ii
+np.trace(W @ W @ W)
+np.trace(W @ W) * np.trace(W)
+np.trace(W) ** 3
+np.trace(W @ W) * np.trace(W.T)
+np.trace(W @ W.T) * np.trace(W)
+np.trace(W @ W @ W @ W)
+np.trace(W @ W @ W @ W.T)
+np.trace(W @ W @ W.T @ W.T)
+np.trace(W @ W.T @ W @ W.T)
+np.trace(W @ W @ W) * np.trace(W)
+np.trace(W @ W @ W.T) * np.trace(W)
+np.trace(W @ W) ** 2
+np.trace(W @ W) * np.trace(W @ W.T)
+np.trace(W @ W.T) ** 2
+np.trace(W @ W) * np.trace(W) * np.trace(W)
+np.trace(W @ W.T) * np.trace(W) * np.trace(W)

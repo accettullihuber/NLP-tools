@@ -1,0 +1,5 @@
+np.trace(W ** 4)       # \sum_{ i ,} M_{ i i  }^4
+np.sum(W ** 4)         # \sum_{ i j } M_{ ij}^4
+(np.sum(np.dot(W,W)))**2   #\sum_{ i , j , k } \sum_{ p , q , r } M_{ i j } M_{ j k }    M_{ pq } M_{ qr  }
+np.sum(np.dot(np.dot(W, W), W))   # \sum_{ i , j , k , l } M_{ ij} M_{ j , k } M_{ k , l }
+np.sum(np.dot(np.dot(np.dot(W,W),W),W)) #\sum_{ i , j ,k , l , m , n } M_{ ij} M_{ jk } M_{ kl} M_{ l  m }

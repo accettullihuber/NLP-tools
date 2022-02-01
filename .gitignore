@@ -1,0 +1,5 @@
+
+*.json
+matrices_1160_arg_subj_context_obj.txt
+matrices_1160_arg_obj_context_subj.txt
+Mathematica Notebooks/Manuel/cut basis/*

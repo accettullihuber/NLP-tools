@@ -1,0 +1,8 @@
+np.trace(W ** 3)  # \sum_{i} W_{ii}^3  :  1-node case - Graph 1
+np.sum(W ** 3)  # \sum_{i,j} W_{ij}^3   :  2-node case - Graph 2
+np.trace(np.dot(np.dot(W, W), W))  # \sum_{i,j,k} W_{ij} W_{jk} W_{ki} : 3 node case - Graph 3
+np.sum((W.sum(axis=1)) * (W.sum(axis=0)) * np.diagonal(W))  # \sum_{i,j,k} M_{ij}M_{jj}M_{jk} : 3 node-two case - Graph 4
+np.sum(W) * (np.trace(W) ** 2)  # \sum_{i,j,k,l} W_{ij}W_{kk}W_{ll} : 4-node case - Graph 5
+(np.trace(W) * np.sum(np.dot(W, W)))  # \sum_{i,j,k,l} M_{ij}M_{jk}M_{ll} : # 4 node-two case - Graph 6
+(np.sum(W) ** 2) * (np.trace(W))  # \sum_{i,j,k,l,m} W_{ij}W_{kl}W_{mm} : 5 node case - Graph 7
+np.sum(W) ** 3  # \sum_{i,j,k,l,m,n} W_{ij} W_{kl} W_{mn} :  6-node case - Graph 8

@@ -1,0 +1,2 @@
+np.trace(W) # \sum_{i} W_{ii}
+np.sum(W) # \ sum_{i,j} W_{ij}

@@ -1,0 +1,14 @@
+np.sum(W) # \ sum_{i,j} W_{ij}
+np.sum(np.dot(W.T,W)) # sum{i,j,k} W_ij W_ik
+np.sum(np.dot(W,W.T)) # sum{i,j,k} W_ij W_kj
+np.sum(np.dot(W,W)) # sum{i,j,k} W_ij W_jk
+np.sum(W) ** 2 #sum{i,j,k,l} W_ij W_kl
+np.sum(W) * np.trace(W)  # \sum_{i,j,k} W_{ii} W_{jk}
+np.sum(W) * (np.trace(W) ** 2)  # \sum_{i,j,k,l} W_{ij}W_{kk}W_{ll} : 4-node case - Graph 5
+(np.trace(W) * np.sum(np.dot(W, W)))  # \sum_{i,j,k,l} M_{ij}M_{jk}M_{ll} : # 4 node-two case - Graph 6
+(np.sum(W) ** 2) * (np.trace(W))  # \sum_{i,j,k,l,m} W_{ij}W_{kl}W_{mm} : 5 node case - Graph 7
+np.sum(W) ** 3  # \sum_{i,j,k,l,m,n} W_{ij} W_{kl} W_{mn} :  6-node case - Graph 8
+(np.sum(W)) ** 3 * np.trace(W)  # \sum_{i,j,k,l,m,n,o,o}} W_{ij} W_{kl} W_{mn} W_{oo} : 7 node case - Graph 9
+np.sum(W) ** 4  # \Sum_{i,j,...,p} W_{ij} W_{kl} W_{mn} W_{op} 8 node case - Graph 10
+(np.sum(np.dot(W,W)))**2   #\sum_{ i , j , k } \sum_{ p , q , r } M_{ i j } M_{ j k }    M_{ pq } M_{ qr  }
+np.sum(np.dot(np.dot(np.dot(W,W),W),W)) #\sum_{ i , j ,k , l , m , n } M_{ ij} M_{ jk } M_{ kl} M_{ l  m }

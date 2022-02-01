@@ -1,0 +1,2 @@
+(np.sum(W)) ** 3 * np.trace(W)  # \sum_{i,j,k,l,m,n,o,o}} W_{ij} W_{kl} W_{mn} W_{oo} : 7 node case - Graph 9
+np.sum(W) ** 4  # \Sum_{i,j,...,p} W_{ij} W_{kl} W_{mn} W_{op} 8 node case - Graph 10

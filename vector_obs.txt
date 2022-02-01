@@ -1,0 +1,11 @@
+np.sum(W)
+np.sum(W ** 2)
+np.sum(W) ** 2
+np.sum(W ** 3)
+np.sum(W) * np.sum(W ** 2)
+np.sum(W) ** 3
+np.sum(W ** 4)
+np.sum(W ** 3) * np.sum(W)
+np.sum(W ** 2) ** 2
+np.sum(W ** 2) * np.sum(W) * np.sum(W)
+np.sum(W) ** 4
